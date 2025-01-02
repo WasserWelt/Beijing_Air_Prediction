@@ -1,0 +1,53 @@
+# config.yaml
+models:
+  - name: rnn
+    params:
+      - epochs: 3
+        batch_size: 32
+        lr: 0.001
+        target_columns:
+          - 'PM2.5'
+          - 'CO'
+      # - epochs: 3
+        # batch_size: 64
+        # lr: 0.0005
+        # target_columns:
+        #   - 'PM2.5'
+        #   - 'CO'
+        #   - 'NO2'
+  - name: lstm
+    params:
+      - epochs: 3
+        batch_size: 32
+        lr: 0.001
+        target_columns:
+          - 'PM2.5'
+          - 'CO'
+  - name: gru
+    params:
+      - epochs: 3
+        batch_size: 32
+        lr: 0.001
+        target_columns:
+          - 'PM2.5'
+          - 'CO'
+      # - epochs: 2
+      #   batch_size: 32
+      #   lr: 0.001
+      #   target_columns:
+      #     - 'PM2.5'
+      #     - 'CO'
+      #     - 'NO2'
+      #     - 'SO2'
+      #     - 'O3'
+      #     - 'Temperature'
+      #     - 'Pressure'
+      #     - 'DewPoint'
+      #     - 'WindSpeed'
+      # - epochs: 3
+        # batch_size: 64
+        # lr: 0.0005
+        # target_columns:
+        #   - 'PM2.5'
+        #   - 'CO'
+        #   - 'NO2'
